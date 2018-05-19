@@ -1,3 +1,4 @@
+
 #header{
 	margin: 0px;
 	background-color: green;
@@ -8,10 +9,17 @@
 	font-size: 30px;
 }
 
+#side-column{
+	width:250px;
+	height:635px;
+	border-right: 1px #CCCCCC solid;
+	float:left;
+}
+
 .analog-clock{
-    width:140px;
-    height:140px;
-    margin:50px 100px;
+	width:150px;
+	height:200px;
+    margin:30px 50px;
     padding:0;
     font-family:sans-serif;
     font-size:14px;
@@ -23,12 +31,35 @@
     fill:white;
 }
 
-#s-hand{
+#s-hand, #s-tail{
     stroke:black;
     stroke-linecap:round;
     stroke-width:1px;
 }
+.digital-clock{
+	text-align: center;
+	padding-top: 30px;
+}
 
-.time-text{
-    text-align:center;
+#sec{
+    font-size: 30px;
+}
+
+#status{
+	text-align: center;
+	color: blue;
+	margin-top: 100px;
+	font-size: 40px;
+}
+
+#game-zone{
+	float:left;
+	margin-left: 10px;
+	width:1200px;
+	height:635px;
+	border: 2px solid red;
+}
+
+#random{
+	margin-left: 50px;
 }
