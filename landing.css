@@ -1,0 +1,81 @@
+body{
+	background-color: #333;
+	color: #fff;;
+	text-align: center;
+	line-height: 1.6;
+}
+
+#head{
+	position: relative;
+	font-family: 'IM Fell French Canon SC', serif;
+	font-size: 20px;
+	top: -150px;
+	animation-name: head;
+	animation-duration: 1.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+
+}
+
+.details{
+	max-width: 960px;
+	margin: auto;
+	padding: 0 30px;
+	top: 150px ;
+	left: -1250px;
+	animation-name: details;
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	transition-property: transform; 
+}
+
+#content{
+	font-family: 'Merienda', cursive;
+	position: relative;
+
+}
+
+@keyframes head{
+	0%{top: -150px;}
+	40%{top: 150px;}
+	50%{top: 130px;}
+	70%{top: 150px;}
+	80%{top: 135px;}
+	90%{top: 150px;}
+	95%{top: 145px;}
+	100%{top: 150px;}
+}
+
+@keyframes details{
+	0%{left: -1250px;}
+	75%{left: 15px; transform: skewX(-60deg);}
+	100%{left: 15px;transform: skewX(0deg);}
+}
+
+#btn{
+	display: inline-block;
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: #fff 1px solid;
+	margin-top: 190px;
+	opacity: 0;
+	animation-name: btn;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	transition-property: transform;
+	transition-duration: 1s;
+
+}
+
+@keyframes btn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#btn:hover{
+	transform: rotateY(180deg);
+}

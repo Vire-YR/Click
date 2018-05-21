@@ -35,6 +35,9 @@
     stroke:black;
     stroke-linecap:round;
     stroke-width:1px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 .digital-clock{
 	text-align: center;
@@ -60,6 +63,14 @@
 	border: 2px solid red;
 }
 
-#random{
-	margin-left: 50px;
+#rect{
+	fill:blue;
+	stroke:pink;
+	stroke-width:5;
+	fill-opacity:0.1;
+	stroke-opacity:0.9;
 }
+
+
+
+
