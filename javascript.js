@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 var count=0; var hits=0; var flag=true; 
+=======
+var count=0;  
+>>>>>>> a6973e48415ea668ac05c5f3f5422be316d94c99
 function clock(){
     count++;
     var v = 'rotate(' + 6*count + ', 70, 70)';
@@ -14,6 +18,7 @@ function clock(){
     //call every second (recursive function)
     if(count<60)
        setTimeout(clock, 1000);
+<<<<<<< HEAD
     else{
         gameOver();
     } 
@@ -27,11 +32,23 @@ function colorSelector(){
         var j=Math.floor(Math.random()*16);
         color+= x[j];
     }
+=======
+    
+};
+window.onload=clock;
+
+function colorSelector(){
+    var x= "0123456789ABCDEF".split(" ");
+    var color="#";
+    for(var i=0;i<6;i++)
+        color+= x[Math.floor(Math.random()*15)];
+>>>>>>> a6973e48415ea668ac05c5f3f5422be316d94c99
     return color;
 }
 
 function shapeSelector(){
     var shape=["rect","circle","ellipse","star","tri"];
+<<<<<<< HEAD
     var select= Math.floor(Math.random()*5);
     var length= (30 + Math.random()*270);
     var breadth= (30 + Math.random()*270);    
@@ -96,3 +113,34 @@ window.onload= function(){
         clock();
         shapeSelector();
 };
+=======
+    var select= Math.floor(Math.random()*4);
+    var width= (30 + Math.random()*270);
+    var height= (30 + Math.random()*270);    
+    var x= (width/2).toFixed(2);
+    var y= (height/2).toFixed(2);
+    width= width.toFixed(2);
+    height= height.toFixed(2);
+    var tag="<svg width="+width+" height="+height+">";
+    switch(select){
+        case 0: tag+="<rect x="+x+" y="+y+" rx="+width+" ry="+height+" />";
+                break;
+
+        case 1: tag+ = "<circle cx="+x+" cy="+x+" r="+x+"/>";
+                break;
+
+        case 2: tag+= "<ellipse cx="+x+" cy="+y+" rx="+x+" ry="+y+" />";
+                break;
+
+        case 3: var w=parseFloat(width);var h=parseFloat(height);
+                var point2= (w*0.2).toFixed(2); var point34= (h*0.4).toFixed(2); var point5=(w*0.4).toFixed(2);
+                var points= x+",0 "+ point2+","+height+" "+width+","+point34+" "+"0,"+point34+" "+point5+","+height;
+                tag+= "<polygon points="+points+"/>";
+                break;
+
+        case 4: var points="0,"+height+" "+ y+",0"+" "+width+","+height;
+                tag+= "<polygon points="+points+" />";
+    }
+    tag+= "</svg>"
+}
+>>>>>>> a6973e48415ea668ac05c5f3f5422be316d94c99

@@ -63,6 +63,17 @@
 	border: 2px solid red;
 }
 
+<<<<<<< HEAD
+=======
+#rect{
+	fill:blue;
+	stroke:pink;
+	stroke-width:5;
+	fill-opacity:0.1;
+	stroke-opacity:0.9;
+}
+
+>>>>>>> a6973e48415ea668ac05c5f3f5422be316d94c99
 
 
 
