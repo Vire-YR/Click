@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="handlebars-v4.0.11.js"></script>
+</head>
+
+<body>
+
+	<div id="header">GAME OF FIGURES</div>
+
+		<div id="side-column">
+			<div class="analog-clock">
+		        <svg width="140" height="140">
+		            <circle id="clock-face" cx="70" cy="70" r="65" />
+		            <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+		            <line id="s-tail" x1="70" y1="70" x2="70" y2="10" />
+		            <text x="62" y="18">60</text>
+		            <text x="118" y="76">15</text>
+		            <text x="64" y="130">30</text>
+		            <text x="7" y="76">45</text>
+		        </svg>
+
+				<div class="digital-clock">
+					<span id="sec">60</span>
+				</div>
+
+			</div>
+
+			<div id="status">
+				<p>Your Hits</p>
+				<p id="hits">0</p>
+			</div>
+
+		</div>
+		 
+
+	 <div id="game-zone"> 		
+ 		<div id="shape"></div>
+		
+		<div id="figure"></div>
+	<script id="figure-template" type="text/x-handlebars-template">	</script>
+
+</body>
+</html>
